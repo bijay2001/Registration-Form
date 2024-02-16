@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <style>
+        body {
+            background-color: beige;
+            color: brown;
+            text-align: left;
+            background-size: auto;
+            font-family: 'Arial Narrow Bold', sans-serif;
+        }
+
+        legend {
+            text-align: left;
+            font-style: solid bold;
+            color: blueviolet;
+            font-size: larger;
+        }
+
+        input {
+            padding: 5px;
+            border-radius: 7px;
+        }
+
+        textarea {
+            padding: 5px;
+            border-radius: 7px;
+        }
+
+        .name {
+            padding: 10px;
+            display: inline;
+            text-align: left;
+            color: brown;
+        }
+
+        .gender {
+            display: inline;
+            padding: 10px;
+            color: blue;
+        }
+
+        .number {
+            display: inline;
+            color: black;
+        }
+
+        .address {
+            color: brown;
+            text-align: left;
+        }
+
+        .college {
+            color: crimson;
+            font-family: system-ui, 'Segoe UI' 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: inline;
+        }
+
+        .lang {
+            color: brown;
+        }
+
+        .submit {
+            text-align: center;
+        }
+
+        button {
+            text-align: center;
+            padding: 2px;
+            border-radius: 7px;
+        }
+
+        button:hover {
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="greeting.html">
+        <fieldset>
+            <legend>
+                <h2>Registration form</h2>
+            </legend>
+            <div class="name">
+                <h5> FULL NAME:</h5>
+                <input type="text" name="name" placeholder="First name" required>
+                <input type="text" name="name" placeholder="Middle name" required>
+                <input type="text" name="name" placeholder="Last name" required>
+            </div>
+            <div class="gender">
+                <h5>Gender:</h5>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+            </div>
+            <div class="dob">
+                <h5>DOB:</h5>
+                <input type="date" id="birthday" name="birthday">
+            </div>
+            <div class="number">
+                <h5>Mob.No :
+                    <input type="text" name="number" required>
+                    E.Mail :
+                    <input type="email" name="e_mail" required>
+                </h5>
+            </div>
+            <div class="address">
+                <h5>Address:</h5>
+                <textarea rows="5" cols="50" name="Description" required></textarea><br>
+            </div>
+            <div class="college">
+                <p>Education:</p>
+                Degree:
+                <input type="text" name="college" required>
+                12th:
+                <input type="text" name="college" required>
+                10th:
+                <input type="text" name="college" required>
+            </div>
+            <div class="lang">
+                <h5>Language:</h5>
+                <input type="checkbox" name="Language">English
+                <input type="checkbox" name="Language">Hindi
+                <input type="checkbox" name="Language">Odia<br><br>
+            </div>
+            <div class="submit">
+                <button type="submit">SUBMIT</button>
+                <!-- <button><a href="greeting.html">SUBMIT</a></button> -->
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
